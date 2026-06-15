@@ -1,0 +1,4 @@
+COntune from 4-Object (Toip10-Update)
+
+Provide me One Line example of all below in TypeScript 
+Main function types: 1. Normal Function 2. Function Expression 3. Arrow Function 4. Anonymous Function 5. Callback Function
