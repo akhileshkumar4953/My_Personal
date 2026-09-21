@@ -1,0 +1,710 @@
+Top 10 SQL Interview Questions for Experienced Developers
+
+Below are interview-ready questions only, clearly defined. No solutions or hints are included.
+
+1. Find the 2nd / Nth Highest Salary ⭐⭐⭐⭐⭐
+
+Question:
+You have an employee table containing employee_id, employee_name, department_id, and salary.
+
+Write an SQL query to find the second-highest distinct salary from the employee table.
+
+Follow-up:
+How would you modify the query to find the Nth highest distinct salary, where N can be any given number?
+
+
+---
+
+2. Find Duplicate Records ⭐⭐⭐⭐⭐
+
+Question:
+You have an employee table containing employee_id, employee_name, and email.
+
+Some employees may have accidentally registered using the same email address.
+
+Write an SQL query to find all email addresses that appear more than once in the table.
+
+Follow-up:
+Write a query to retrieve the complete employee records associated with those duplicate email addresses.
+
+
+---
+
+3. Find the Highest-Paid Employee in Each Department ⭐⭐⭐⭐⭐
+
+Question:
+You have an employee table containing:
+
+employee_id
+
+employee_name
+
+department_id
+
+salary
+
+
+Write an SQL query to find the employee(s) who have the highest salary in each department.
+
+Follow-up:
+If two or more employees in the same department have the same highest salary, how would you return all of them?
+
+
+---
+
+4. Employee Salary Greater Than Manager's Salary — Self Join ⭐⭐⭐⭐⭐
+
+Question:
+You have an employee table containing:
+
+employee_id
+
+employee_name
+
+salary
+
+manager_id
+
+
+The manager_id refers to another employee's employee_id in the same table.
+
+Write an SQL query to find all employees whose salary is greater than their manager's salary.
+
+Follow-up:
+Explain why a self join is required for this problem.
+
+
+---
+
+5. Find Top 3 Highest-Paid Employees in Each Department ⭐⭐⭐⭐⭐
+
+Question:
+You have an employee table containing:
+
+employee_id
+
+employee_name
+
+department_id
+
+salary
+
+
+Write an SQL query to find the top 3 highest-paid employees from every department.
+
+Important condition:
+The ranking should restart separately for each department.
+
+Follow-up:
+How should your query behave if multiple employees have the same salary?
+
+
+---
+
+6. ROW_NUMBER vs RANK vs DENSE_RANK ⭐⭐⭐⭐⭐
+
+Question:
+You have the following employee salaries:
+
+100000
+90000
+90000
+80000
+70000
+70000
+60000
+
+Write SQL queries using:
+
+1. ROW_NUMBER()
+
+
+2. RANK()
+
+
+3. DENSE_RANK()
+
+
+
+to rank these employees based on salary in descending order.
+
+Follow-up:
+Explain the difference in the resulting rank numbers when duplicate salaries exist.
+
+
+---
+
+7. GROUP BY + HAVING ⭐⭐⭐⭐
+
+Question:
+You have an employee table containing:
+
+employee_id
+
+employee_name
+
+department_id
+
+salary
+
+
+Write an SQL query to find all departments that have more than 5 employees.
+
+The result should contain:
+
+department_id
+
+Number of employees in that department
+
+
+Follow-up:
+Explain the difference between using WHERE and HAVING for this requirement.
+
+
+---
+
+8. INNER JOIN / LEFT JOIN ⭐⭐⭐⭐⭐
+
+Question:
+You have two tables:
+
+employee
+
+employee_id
+employee_name
+department_id
+
+department
+
+department_id
+department_name
+
+Write an SQL query to display every employee along with their department name.
+
+Follow-up 1:
+Write a query to find employees who do not belong to any department.
+
+Follow-up 2:
+Explain the difference between INNER JOIN and LEFT JOIN for this scenario.
+
+
+---
+
+9. Running Total / Cumulative Sum ⭐⭐⭐⭐
+
+Question:
+You have an employee table containing:
+
+employee_id
+
+employee_name
+
+salary
+
+joining_date
+
+
+Write an SQL query to calculate the cumulative salary total based on employees' joining dates.
+
+The result should display:
+
+Employee name
+
+Salary
+
+Joining date
+
+Running/cumulative salary total up to that employee
+
+
+Follow-up:
+How would you calculate the running total separately for each department?
+
+
+---
+
+10. Find Missing IDs / Gaps ⭐⭐⭐⭐
+
+Question:
+You have an employee table where employee_id is expected to be sequential.
+
+For example:
+
+1
+2
+3
+5
+6
+8
+10
+
+IDs 4, 7, and 9 are missing.
+
+Write an SQL query to identify all the missing empl
+
+
+
+----------------------------------------------------------Java--------------------------------------------------------------------
+Top 10 Java Coding Questions for Experienced Developers
+
+1. Find the Second-Highest Salary ⭐⭐⭐⭐⭐
+
+Given a list of Employee objects containing id, name, department, and salary, write Java code to find the second-highest distinct salary.
+
+
+---
+
+2. Find Duplicate Elements in a List ⭐⭐⭐⭐⭐
+
+Given:
+
+[10, 20, 30, 20, 40, 10, 50, 30]
+
+Write Java code to find all duplicate elements.
+
+
+---
+
+3. Find the Highest Salary Employee from Each Department ⭐⭐⭐⭐⭐
+
+Given a list of Employee objects, write Java code to find the employee with the highest salary in each department.
+
+If multiple employees have the same highest salary, return all matching employees.
+
+
+---
+
+4. Find the Top 3 Salaries from Each Department ⭐⭐⭐⭐⭐
+
+Given a list of employees, write Java code to find the top 3 highest-paid employees from each department.
+
+Handle duplicate salaries appropriately.
+
+
+---
+
+5. Count Character Frequency ⭐⭐⭐⭐⭐
+
+Given a String:
+
+"programming"
+
+Write Java code to find the frequency of each character.
+
+Expected type of output:
+
+p=1
+r=2
+o=1
+g=2
+a=1
+m=2
+i=1
+n=1
+
+
+---
+
+6. Find the First Non-Repeated Character ⭐⭐⭐⭐⭐
+
+Given a String:
+
+"swiss"
+
+Write Java code to find the first character that appears only once.
+
+Expected result:
+
+w
+
+
+---
+
+7. Find Duplicate Characters in a String ⭐⭐⭐⭐⭐
+
+Given:
+
+"programming"
+
+Write Java code to find all characters that occur more than once.
+
+
+---
+
+8. Find Missing Number from an Array ⭐⭐⭐⭐⭐
+
+Given an array containing numbers from 1 to N, with exactly one number missing:
+
+[1, 2, 3, 4, 6, 7, 8]
+
+Write Java code to find the missing number.
+
+Expected result:
+
+5
+
+Follow-up: Solve it without sorting the array.
+
+
+---
+
+9. Find the Longest Substring Without Repeating Characters ⭐⭐⭐⭐⭐
+
+Given a String:
+
+"abcabcbb"
+
+Write Java code to find the longest substring that contains no repeated characters.
+
+Expected result:
+
+"abc"
+
+Follow-up: Return the length instead of the substring.
+
+
+---
+
+10. Group Employees by Department ⭐⭐⭐⭐⭐
+
+Given a list of Employee objects containing:
+
+id
+name
+department
+salary
+
+Write Java code using Java 8+ Streams to group employees by department.
+
+Expected structure:
+
+IT       → [Employee1, Employee2]
+HR       → [Employee3, Employee4]
+Finance  → [Employee5]
+
+Follow-up: Find the average salary of each department.
+
+
+-----------------------------------------Angular-------------------------------------------
+Top 5 Angular / TypeScript Coding Questions for Experienced Developers
+
+1. Employee Filtering & Sorting — TypeScript ⭐⭐⭐⭐⭐
+
+Given:
+
+interface Employee {
+  id: number;
+  name: string;
+  department: string;
+  salary: number;
+}
+
+Write TypeScript code to:
+
+Filter employees whose salary is greater than 50000
+
+Sort them by salary in descending order
+
+Return only their names
+
+
+Follow-up: Implement the same requirement using filter(), sort(), and map().
+
+
+---
+
+2. Angular Parent → Child Communication ⭐⭐⭐⭐⭐
+
+Create an Angular Parent Component containing a list of employees.
+
+Create an Employee Child Component.
+
+Write Angular/TypeScript code to:
+
+Pass an employee object from Parent → Child using @Input()
+
+Display the employee's name and salary in the child
+
+Notify the parent when the employee is selected using @Output() and EventEmitter
+
+
+Follow-up: What happens when the parent updates the employee object?
+
+
+---
+
+3. Angular API Call Using HttpClient ⭐⭐⭐⭐⭐
+
+Create an Angular service that calls:
+
+GET /api/employees
+
+Write TypeScript/Angular code to:
+
+Create an Employee interface
+
+Create an EmployeeService
+
+Call the REST API using HttpClient
+
+Return the employees as an Observable<Employee[]>
+
+Subscribe to the API from the component
+
+Display the employees in the template
+
+
+Follow-up: How would you handle API errors using RxJS?
+
+
+---
+
+4. RxJS Search with Debouncing ⭐⭐⭐⭐⭐
+
+Create an Angular search box for employees.
+
+When the user types:
+
+"akh"
+
+the application should call:
+
+GET /api/employees?search=akh
+
+Write Angular/TypeScript code using RxJS to:
+
+Capture search input
+
+Wait 300 ms after the user stops typing
+
+Avoid duplicate searches
+
+Call the API
+
+Display the results
+
+
+Expected RxJS concepts:
+
+debounceTime()
+distinctUntilChanged()
+switchMap()
+
+Follow-up: Why is switchMap() useful for a search API?
+
+
+---
+
+5. Angular Route Guard for Authentication ⭐⭐⭐⭐⭐
+
+Create an Angular application with:
+
+/login
+/dashboard
+/employees
+
+Write an Angular Route Guard that:
+
+Allows /dashboard and /employees only when the user is authenticated
+
+Redirects unauthenticated users to /login
+
+Reads the authentication state from an AuthService
+
+
+Follow-up: How would you handle a JWT token stored in localStorage and automatically attach it to API requests using an HTTP interceptor?
+
+-----------------------------------------------Spring/boot------------------------------------
+Top 5 Spring / Spring Boot / Microservices Coding Questions
+
+1. Create a REST API with CRUD Operations ⭐⭐⭐⭐⭐
+
+Create a Spring Boot REST API for an Employee resource.
+
+Employee fields:
+
+id
+name
+department
+salary
+
+Implement:
+
+POST /api/employees — Create employee
+
+GET /api/employees — Get all employees
+
+GET /api/employees/{id} — Get employee by ID
+
+PUT /api/employees/{id} — Update employee
+
+DELETE /api/employees/{id} — Delete employee
+
+
+Requirements:
+
+Controller
+
+Service
+
+Repository
+
+Entity
+
+DTO
+
+Proper HTTP status codes
+
+Exception handling
+
+
+Follow-up: How would you implement global exception handling using @ControllerAdvice?
+
+
+---
+
+2. Implement Pagination, Sorting & Filtering ⭐⭐⭐⭐⭐
+
+Create an API:
+
+GET /api/employees
+
+It should support:
+
+?page=0
+&size=10
+&sort=salary,desc
+&department=IT
+
+Write Spring Boot code using Spring Data JPA to:
+
+Implement pagination
+
+Implement sorting
+
+Filter employees by department
+
+Return the results along with pagination information
+
+
+Follow-up: How would you implement dynamic filtering when multiple search parameters are optional?
+
+
+---
+
+3. Implement JWT Authentication & Authorization ⭐⭐⭐⭐⭐
+
+Create a Spring Boot authentication system with:
+
+POST /api/auth/register
+POST /api/auth/login
+GET  /api/employees
+
+Implement:
+
+User registration
+
+Password hashing using BCrypt
+
+Login authentication
+
+JWT token generation
+
+JWT request validation
+
+Spring Security configuration
+
+Protected APIs
+
+Role-based authorization
+
+
+For example:
+
+ROLE_USER
+ROLE_ADMIN
+
+Only admins should be allowed to delete employees.
+
+Follow-up: How would you implement a JWT authentication filter using OncePerRequestFilter?
+
+
+---
+
+4. Microservices Communication ⭐⭐⭐⭐⭐
+
+You have two microservices:
+
+Employee Service
+Department Service
+
+Employee Service needs to retrieve department information from Department Service.
+
+Create an API:
+
+GET /api/employees/{id}
+
+The response should contain:
+
+{
+  "id": 101,
+  "name": "Akhil",
+  "salary": 100000,
+  "department": {
+    "id": 10,
+    "name": "IT"
+  }
+}
+
+Implement the communication between the two services using Spring Cloud OpenFeign.
+
+Follow-ups:
+
+How would you handle Department Service being unavailable?
+
+How would you implement a timeout?
+
+How would you add retry/fallback?
+
+When would you use synchronous vs asynchronous communication?
+
+
+
+---
+
+5. Implement Resilience in a Microservice ⭐⭐⭐⭐⭐
+
+You have an Order Service that calls a Payment Service.
+
+Order Service
+      ↓
+Payment Service
+
+Sometimes Payment Service becomes slow or unavailable.
+
+Write Spring Boot/Microservices code using Resilience4j to implement:
+
+Timeout
+
+Retry
+
+Circuit Breaker
+
+Fallback response
+
+
+Example API:
+
+POST /api/orders
+
+If Payment Service is unavailable, the Order Service should return an appropriate response instead of continuously waiting for the Payment Service.
+
+Follow-ups:
+
+What are the states of a Circuit Breaker?
+
+When should retry be used?
+
+Why can excessive retries be dangerous?
+
+How would you configure different timeout/retry settings for different downstream services?,
