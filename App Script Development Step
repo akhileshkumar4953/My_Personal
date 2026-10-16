@@ -1,0 +1,201 @@
+Step1: Installtion
+Open Cmd and we Executed below Command
+    1.nvs menu
+    2.Click enter
+    3.node -v
+    4.npm -v
+    3.npm install -g @google/clasp
+    4:clasp login
+    Follow Below If Not get the version
+        1:nvs add 24.13.0
+        2:nvs add latest
+        3:nvs add lts
+        4:nvm 1ist --
+        5:nvs use 24.13.0
+        6:nvs use latest
+        7:nvs use lts
+        8:npx cowsay "Artifactory reached!"
+        9:nvs list
+        10:node -v
+        11:npm install -g @google/clasp
+        
+We Login Succesfully Using url and got Response in COmmand 
+_____________________________________________________________
+
+Step2: Export Repository Process
+
+1.Copy url from Request Number(ServiceNow)
+2.Check this Is merged or not(It's should not be Opened If It's Opened Then Merged First Then Do next Step)
+For More Verification
+    1.Inside Pull-Request Check the latest, It Should be Closed
+    2.Sroll Down and Check below 
+    3.Pull request Succesfully merged and closed Should be shown by Akshay or anyone.
+3.Click On the Code.
+4.Copy the url and Clone
+5. Run below Command (If Already Repository there in Your Folder then Update ) 
+git clone https://github.airbus.corp/Airbus/7CB1-AirStream-Addon.git
+
+_____________________________________________________________
+
+Step3: Login Service Account
+
+1.Login Using Service Account
+https://developers.google.com/apps-script/
+
+2. Use Below Credentails for Login
+sa-2l09-apps-script@airbus.com
+4Mv/QVQ/Qnqer)SiO.m,
+
+3.Select Authentication Factor & and Provide Name of Aishwarya 
+ 
+_____________________________________________________________
+
+Step4: Create App Script Project on Drive using Service Account
+
+    Menually:(If Need to Create)
+    Create one Folder Inside drive> Apps Script Published> CSV Exporter(Basically Repository Name Like -AirStream)
+    Then Right clicked inside Folder
+        1.CLick on More
+        2.CLick on Google App Script
+        3.Click on Create Script
+        4.Re-name the File(Similar to Repository Like AirStream)
+        5.Copy Id from url -
+
+
+Step4:Create .clasp.json file inside Clone Repository
+{"scriptId":""}
+
+1.Paste the url (1I-ySJipRHDD6zr_ghwuWs-eKrhxhSa0JSZLYg5e514PESYD6vxgjceXM)
+2.Save in Clone Repository Path
+
+_____________________________________________________________
+Step5: Copy porject Number of same Reposity  Inside Script.goole.com/home using Service Account and clasp push
+
+1. Open Google Drive using Service Account (If It's Not loding then login first in OneLogin then Serch Googlre Drive)
+
+2. Open  Script.goole.com/home and follow below
+
+3.Clasp login
+4. Use same url and login using service  Account and it Will redirect to welcome page
+
+5.Serach project Name (Confirm Which project Ask In next call With Asksy
+and Click on that folder It will be Redirect to AppScript Code
+Note:It will be Similar Name of Repository
+You will we get name inside Repository only
+
+6. Copy Porject number from top of the Page
+7.Go Inside Created App Script (https://script.google.com/)
+8.Click on Project Setting *
+Inside Google Could Platform (GCP) Projects
+Enter Copy Project Number Inside GCP Project Number
+CLick on Set Project.
+Note:  if You Get OAuth Consent Details link then Click on that 
+
+1.Click on Configuration consent Screen(inside Credentails)
+2.Click On get Started
+3.
+1.Provide App information 
+It Should be similar to Repository Name (Like AirStream)
+and Choose Service Account email Id and Click on Next
+
+2.Audience  SHould be Internal
+3.Contact Information:Service Account mail Id
+4.Check Agree and Click on Continue
+5.Click on Create Button
+
+Then Finally Go Again Inside App Script (https://script.google.com/) and again CLick on Set project
+1.CLick on <> icon and Checked Show "appscript.json" manifest file editor
+
+2.Finally push the Code
+3.Inside Same Clone Reposity CLode you have to Push
+clasp push (*) (It Should be the same name of file as you saved .clasp.json or clasp.json)
+Note:If You Getting Project setting not found
+or 
+clasp push -P .clasp.json
+
+Next Choose y and Hit enter
+and Confirm File It HSould be 8 or depends on Files avilability
+in both places Drive and Git inside src
+_____________________________________________________________
+
+Step6: Deploye inside drive
+1.CLick on Deployement
+2.Choose new Deployement
+3. Choose Add-on 
+Note Confirm : Inside Incdent 
+Inside More Information of Decription and Check If It's Google Sheet  then we need to Checose Addon-on
+4.Decription - Today date
+5.Click on deployee.
+6.Copy the deployement id and click on deploye.
+We need Script Id or project Id (url of App-Script Drive)
+
+_____________________________________________________________
+Step7: Go Inside Market places (console.cloud.google.com)
+1.Search Marketplace Sdk
+2.Click on Workplae Marketplace Sdk
+3.Enable It or Mange
+
+_____________________________________________________________
+Step 8:Go Inside App Configuation
+1.CLick on App Configuation(Make Sure It Should besame app as you can verify name of the application)
+2.Choose private (App Visibility)
+3. Choose Sheet Adod-on (App Configuration) You Can also Confirm We need to Choose Google Workspace  add-on' Or Not
+4.Then provide the Details 
+5.Then provide Scrip Id (url of App-Script Drive)
+6.Version should be 1
+
+7.AouthScope Provide  from App-Script Drive (Inside appscript.json)
+Note :Same we have to provide not extra(5 then only 5) -delete Extra
+
+8.Developer Information (You Will Get from Request Service(ServiceNow))
+Developer Website "https://www.airbus.com
+Only Fill Important This
+
+
+Then Filly Click on  Save Draft and Go The Issue if any Occues
+Note:You can also Check Insied Document Next Step(Airbus|Admin Add-ons Deployenes Inside 2nd tab Initial App Deployements)
+_____________________________________________________________
+
+Click On Store Listing (Same Row of App Configuation)
+Open Documents and last section  of ((Airbus|Admin Add-ons Deployenes Inside 2nd tab Initial App Deployements)) 
+
+Inside App Details 
+1.Click on Engish  and provide details 
+Application Name -Similar To Project Like AirStream
+Other Details We Will Get Created ServiceNow  
+2.Priceing -Default
+3.Categeory - Marketing and Analetic
+
+4.Graphic Icon We Will get From CLone Project Inside Asset Folder.
+Screenshort -We Will get from same place.
+
+5.Support url - Should Be https://www.airbus.com (Copy from Documents)
+Post Install Tip -NA
+
+6.Distrubustion - All Regions
+
+Finally Save Draf and Make it Pulish
+_____________________________________________________________
+Finall Confimation - Send the url to Akshay for COnfirmation you ou can also Confirm
+CLick on Install for Same App inside same place
+Select All & and Continue
+Coninue & Done
+CLick on sheets (Inside Gmail drive )
+Clikc on Blank
+Click on Extention
+Then Click on Created One Like AirStream
+Click On Insert Data
+----Not Needed But you Can Coonfirm with The User If any error or not
+
+_____________________________________________________________
+Finally Go Inside Service Incedent
+State: Mark as Closed Complete
+Notes: In Down of the Page
+"We have Updated add-on Successfully as Requested."
+CLick On Post and Update(On top)
+Also Click on Request Item  (Option 4 from top)
+Click on Open Record
+and Provide Addition Commnet
+"We have Updated add-on Successfully as Requested."
+Then Post and Update.
+_____________________________________________________________
