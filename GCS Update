@@ -1,0 +1,40 @@
+Thank you Rajesh for Shareing the Screen
+Welcome In GCS Call WK-43
+Hi Martin ,Hi Team
+
+Confluence Connector Upgrade and Consistency Validation
+
+Currently Connector Version Is old and It's Not Supported 
+upgraded Confluence environment. 
+Raytion is developing an updated connector version and they will release in next Week
+Once We get new Vesion Then Will inform our  Confluence Administration team (Chandra Prakash)and they Will deploying it in Val and Production.
+
+Note:
+The traversal fails during the GetGlobalAcl step and stops within a few seconds with:
+
+2.GitHub Security Alert Remediation:
+Now I Make It on hold Bacuse of Above Search Plugin Dependency 
+without Fixed It's Deficalt To test So Once It's Resolve I will Make it in Progress
+so till Now 
+We have Documneted our execution Plan for feature refrence
+and also Shared With the team
+Hope you Checked That Document basically I try To Cover All Development Step 
+as well as backup and Rollback Plan.
+and 2nd Backup Part is Ready
+only need To execute & test On Val first 
+once alret Resolve We Apply Same Changes on Prod Envoirment 
+
+Risk: It's Low - Because It's dependency upgrade only. 
+
+3.GitHub to GitLab Migration
+I Make It on Hold Because of Same without Fixing Search Plugin issue It's Difficault To validate Migration.
+So till Now 
+Migration planning and essential verification have been completed successfully.
+and also We Created GitLab Group  Successfully Just Waiting for Resolve
+the Search Plugin issue for Testing Purpuse Afte Maigration.
+
+Once It's Fix then only we Can Procced furture
+
+Raytion Connector License Expiry 
+Raytion has confirmed that the connector license will expire on 31 Dec 2026 and no further renewals will be available.
+So Any future planning 
